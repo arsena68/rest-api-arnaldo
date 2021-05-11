@@ -1,7 +1,7 @@
 const mysql = require('../mysql');
 
 exports.getProducts = async (req, res, next) => {
-    try {
+    try { 
         console.log(req.query.name)
         let name = '';
         if (req.query.name) {
