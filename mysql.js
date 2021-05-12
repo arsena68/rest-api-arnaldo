@@ -1,7 +1,7 @@
-const mysql = require('mysql');
+const mysql = require('mysql2');
 
 var pool = mysql.createConnection({
- //   "connectionLimit" : 1000,
+    "connectionLimit" : 500,
     "user" : process.env.MYSQL_USER,
     "password": process.env.MYSQL_PASSWORD,
     "database" : process.env.MYSQL_DATABASE,
